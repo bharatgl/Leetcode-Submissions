@@ -38,7 +38,14 @@ class Compute {
     public int largest(int arr[], int n)
     {
         
-        Arrays.sort(arr);
-       return arr[n-1];
+    //     Arrays.sort(arr);
+    //   return arr[n-1];
+    int larger = arr[0];
+    for(int i = 0;i<n;i++){
+        if(arr[i]>larger){
+            larger = arr[i];
+        }
+    }
+    return larger;
     }
 }
