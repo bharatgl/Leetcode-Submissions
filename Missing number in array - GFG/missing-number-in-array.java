@@ -27,11 +27,11 @@ class GFG {
 // User function Template for Java
 
 class Solution {
-    int MissingNumber(int array[], int n) {
+    int MissingNumber(int array[], int n) {  // {1,2,3,5} ,5
         // Your Code Here
-       int total = (n*(n+1))/2;
-       for(int i = 0;i<n-1;i++){
-           total -= array[i];
+       int total = (n*(n+1))/2;       // (5*6)/2 = 15
+       for(int i = 0;i<n-1;i++){      // 
+           total -= array[i];          // 15 - 0 = 5 --> f, 
        }
        return total;
     }
